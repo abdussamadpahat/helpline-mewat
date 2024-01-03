@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="index.css"> -->
+
+  <title>Helpline</title>
+  <style>
+    .bg {
+      background-color: rgb(240, 110, 50);
+    }
+
+    .bgs {
+      background-color: rgb(240, 110, 50);
+    }
+
+    .textc {
+      color: rgb(255, 250, 230);
+    }
+
+    .bg2 {
+      background-color: rgb(255, 250, 230);
+    }
+
+    .text {
+      color: rgb(95, 94, 94);
+      ;
+    }
+
+    .pages {
+      text-decoration: none;
+      padding: 7px;
+    }
+
+    .pages:hover {
+      color: black;
+      background-color: rgb(254, 149, 100);
+    }
+
+    .cards {
+      margin: 5%;
+      background-color: rgb(251, 222, 197);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgb(251, 118, 2);
+    }
+
+    .togler {
+      border: none;
+    }
+
+    .dntbtn {
+      border: none;
+      border-collapse: separate;
+      color: white;
+      font-weight: 600;
+      font-size: 12px;
+    }
+
+    .fbtn {
+      color: rgb(52, 52, 52);
+      font-weight: 200;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .fbtn:hover {
+      font-size: 25px;
+      font-weight: 300;
+      /* padding-bottom: 20px; */
+    }
+
+    .dbtn {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .dbtn:hover {
+      font-weight: 700;
+      color: rgb(63, 63, 63);
+    }
+
+    .donationTableNumber {
+      color: rgb(54, 54, 54);
+      width: 10%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .donationTableName {
+      color: rgb(54, 54, 54);
+      width: 65%;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .donationTableAmmount {
+      color: rgb(54, 54, 54);
+      width: 25%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .donationTable {
+      border-top: 1px solid rgb(182, 181, 181);
+      height: 30px;
+      padding-top: 7px;
+    }
+
+
+
+    .css1 {
+      padding-bottom: 100px;
+      padding-top: 70px;
+    }
+  </style>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg fixed-top shadow">
+    <div class="container-fluid">
+      <div>
+        <img style="border-radius: 100px; width: 45px; height: 45px;"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwIHE_ezwcKdve49nsdjwHoi11Py5v9H0wyQ&usqp=CAU"
+          alt="" />
+      </div>
+      <div>
+        <p class='textc' style="padding-top: 15px; font-weight: 800;">HelpLine</p>
+      </div>
+      <button class="togler bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon text-light"></span> -->
+        <span class="material-symbols-outlined textc">menu</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="pages textc" href="#">Home</a>
+          <a class="pages textc" href="#">Features</a>
+          <a class="pages textc" href="#">Pricing</a>
+          <a class="pages textc" href="#">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg2 d-grid " style="padding-bottom: 100px; padding-top: 70px;">
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-4 cards ">
+      <div class="m-2">
+        <div class="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxDQj5Zpk2fs_CWkgkG0C1ybW1XQIz9az1w&usqp=CAU"
+            alt="" style="width: 100%; height: 160px; border-radius: 7px;" />
+        </div>
+        <div class="d-flex my-1">
+          <div style="width: 23%; text-align: right;">
+            <button class="dntbtn bg rounded">Donate</button>
+          </div>
+          <div style="width: 50%; text-align: center;">
+            <a to="/donation"><button class="dntbtn bg rounded">Total Donation</button></a>
+          </div>
+          <div style="width: 27%; text-align: left;">
+            <button class="dntbtn bg rounded">&nbsp;Details&nbsp;</button>
+          </div>
+        </div>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, placeat.</h5>
+        <p>टेक्स्ट ऐसे कैरेक्टर्स हैं जो words अर्थात शब्द, sentence अर्थात वाक्य और पैराग्राफ बनाने के लिए उपयोग किए
+          जाते हैं। सिर्फ टेक्स्ट से ही जानकारियों को दिया जाना संभव हो सकता है लेकिन टेक्स्ट का उपयोग सामान्य जानकारी
+          देने में ही किया जाता है ।</p>
+      </div>
+    </div>
+    <a href="#" style="text-align: center; margin-top: 50px;"><span
+        style="font-size: 33px; color: rgb(240, 110, 50); cursor: pointer;"
+        class="material-symbols-outlined">arrow_circle_up</span></a>
+
+
+    <div class='bg2 fixed-bottom' style="height: 45px; border-top: 1px solid rgb(182, 181, 181); ">
+      <div class='d-flex' style="padding-top: 5px;">
+        <div style="width: 100%; text-align: center;">
+          <span class="material-symbols-outlined fbtn" style="font-weight: 300; font-size: 25px;">home</span>
+        </div>
+        <div style="width: 100%; text-align: center;">
+          <a to="/donation"><span class="material-symbols-outlined fbtn">volunteer_activism</span></a>
+        </div>
+        <div style="width: 100%; text-align: center;">
+          <a to=""><span class="material-symbols-outlined fbtn" style="padding-top: 4px;">sms</span></a>
+        </div>
+        <div style="width: 100%; text-align: center;"><a to=""><img
+              style="border-radius: 100px; width: 25px; height: 25px; cursor: pointer;"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwIHE_ezwcKdve49nsdjwHoi11Py5v9H0wyQ&usqp=CAU"
+              alt="" /></a></div>
+      </div>
+    </div>
+
+</html>
